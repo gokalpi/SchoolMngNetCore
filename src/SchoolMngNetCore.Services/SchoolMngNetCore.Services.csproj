@@ -5,8 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SchoolMngNetCore.Core\SchoolMngNetCore.Core.csproj" />
     <ProjectReference Include="..\SchoolMngNetCore.Infrastructure\SchoolMngNetCore.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\Finance\" />
+    <Folder Include="Interfaces\HumanResources\" />
+    <Folder Include="Interfaces\Schedule\" />
+    <Folder Include="Responses\Finance\" />
+    <Folder Include="Responses\HumanResources\" />
+    <Folder Include="Responses\Schedule\" />
+    <Folder Include="Services\Finance\" />
+    <Folder Include="Services\Administration\" />
+    <Folder Include="Services\HumanResources\" />
+    <Folder Include="Services\Schedule\" />
   </ItemGroup>
 
 </Project>
