@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using SchoolMngNetCore.Core.Entities.Base;
+using SchoolMngNetCore.Core.Contracts;
 
 namespace SchoolMngNetCore.Infrastructure.Identity
 {
-    public class ApplicationUser : IdentityUser<int>, IEntity<int>
+    public class ApplicationUser : IdentityUser<int>, IEntity
     {
     }
 }
