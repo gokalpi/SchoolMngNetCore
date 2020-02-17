@@ -1,15 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SchoolMngNetCore.Core.Entities.Base;
+using SchoolMngNetCore.Core.Contracts;
 using SchoolMngNetCore.Core.Specifications.Base;
 using System.Linq;
 
 namespace SchoolMngNetCore.Infrastructure.Data
 {
-    public class SpecificationEvaluator<T> : SpecificationEvaluator<T, int> where T : class, IEntity<int>
-    {
-    }
-
-    public class SpecificationEvaluator<T, TId> where T : class, IEntity<TId>
+    public class SpecificationEvaluator<T> where T : class, IEntity
     {
         public static IQueryable<T> GetQuery(IQueryable<T> inputQuery, ISpecification<T> specification)
         {
